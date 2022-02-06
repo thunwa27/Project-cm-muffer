@@ -60,7 +60,7 @@ const ContentSwiper = () => {
       setProductsList(newList);
     });
   };
-  //--- ทดสอบ --- git
+  //--- ทดสอบ --- git จาก notebook
   useEffect(() => {
     getProducts();
   }, []);
