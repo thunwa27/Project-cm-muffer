@@ -1,0 +1,48 @@
+.present_price {
+  text-align: center;
+  margin-top: 20px;
+}
+.present_price .row {
+  justify-content: center;
+}
+.present_price .row .col-xl-3 {
+  width: 300px;
+  height: 400px;
+  background: #ff333e;
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 10px;
+  position: relative;
+}
+.present_price img {
+  width: 100%;
+  height: auto;
+}
+.present_price h3 {
+  margin-top: 20px;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.present_price p {
+  color: white;
+  font-size: 1.5rem;
+}
+.present-bg {
+  position: absolute;
+  opacity: 0.5;
+  width: 330px;
+  height: auto;
+  left: 0;
+  top: 0;
+}
+.present-text {
+  position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+  .present_price .row .col-xl-3 {
+    width: 255px;
+    height: 350px;
+  }
+}

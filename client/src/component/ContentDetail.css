@@ -1,0 +1,55 @@
+.detail-main {
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.detail-main img {
+  width: 100%;
+  padding: 10px;
+}
+.detail-content {
+  position: relative;
+}
+.detail-text {
+  padding: 10px;
+}
+.detail-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.detail-text p {
+  font-size: 18px;
+}
+.line-detail-main {
+  position: absolute;
+  top: -200px;
+  right: 250px;
+}
+.line-detail {
+  width: 1000px;
+  height: 1200px;
+  background: linear-gradient(96deg, #ff3636, #ffb734e3);
+  transform: rotate(66deg);
+}
+
+@media screen and (min-width: 820px) {
+  .line-detail-main {
+    right: 500px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .line-detail-main {
+    right: 800px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .line-detail-main {
+    right: 1000px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .line-detail-main {
+    right: 1200px;
+  }
+}
