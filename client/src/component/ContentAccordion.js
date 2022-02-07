@@ -13,7 +13,9 @@ const ContentAccordion = () => {
               the 1500s, when an unknown printer took a galley of type and
               scrambled
             </p>
-            <img src={products_7} alt="" />
+            <div className="content_ac_img">
+              <img src={products_7} alt="" />
+            </div>
           </div>
         </div>
         <div className="col-md">

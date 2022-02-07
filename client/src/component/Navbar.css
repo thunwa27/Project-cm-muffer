@@ -1,6 +1,8 @@
 .navberMain {
   background: rgb(255, 255, 255);
   border-bottom: 2px solid #dfdfdf;
+  position: fixed;
+  z-index: 99;
 }
 .logo-navbar {
   width: 180px;

@@ -15,7 +15,6 @@ const ContentSwiper = () => {
   const maxLength = 55;
 
   const ShowBuyEL = (index) => {
-    console.log(index);
     setIndexShow(index);
   };
 
@@ -29,7 +28,6 @@ const ContentSwiper = () => {
           return item.products_type === "ปลายท่อ";
         });
         setProductsList(List);
-        console.log(List);
       })
       .catch(console.log("error"));
   };

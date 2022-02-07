@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo_cmmuffler from "../img/svg/logo_cmmuffler.svg";
 import "./Navbar.css";
 
@@ -9,6 +9,17 @@ const Navbar = () => {
   const dropdownrespon = () => {
     setDropResponsive(!dropResponsive);
   };
+
+  //----- Function Scroll Navbar ----- //
+  const [offset, setOffset] = useState(0);
+  const onScroll = () => setOffset(window.pageYOffset);
+  console.log(offset);
+  useEffect(() => {
+    // clean up code
+    window.removeEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <div className="container-fluid navberMain">

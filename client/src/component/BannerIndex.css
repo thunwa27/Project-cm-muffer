@@ -9,6 +9,7 @@
   overflow: hidden;
   height: 600px;
   /*background-color: #e5e5e5;*/
+  padding-top: 3rem;
 }
 .line {
   position: absolute;
@@ -63,7 +64,7 @@
 }
 @media screen and (min-width: 1280px) {
   .bg-banner {
-    height: 600px;
+    height: 660px;
   }
 }
 @media screen and (min-width: 1600px) {
