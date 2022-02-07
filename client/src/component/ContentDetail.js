@@ -14,10 +14,12 @@ const ContentDetail = () => {
           </div>
           <div className="col-md-5">
             <section className="detail-text">
-              <h1>TEXT DETAIL</h1>
+              <h1>ท่อคู่ออกจริง แรงจริง</h1>
               <p>
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s
+                ท่อคู่หลากหลายทรงไม่ว่าจะ ทรง VIP หรือ ทรงรูปไข่วงรี
+                ทางร้านจัดให้
+                พร้อมออกแบบเดินไลน์ท่อและหม้อพักใหม่ให้เข้ากับตัวรถ
+                เลือกชนิดวัตถุได้ทั้ง เหล็ก สแตนเลส หรือไทเทเนียม
               </p>
             </section>
           </div>

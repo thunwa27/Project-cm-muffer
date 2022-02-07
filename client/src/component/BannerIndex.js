@@ -19,10 +19,11 @@ const BannerIndex = () => {
           <div className="banner-index ">
             <div className="row ">
               <div className="col-md-4 banner-text">
-                <h1>CM MUFFER</h1>
+                <h1>CM MUFFLER</h1>
                 <p>
-                  Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s, when an unknown printer
+                  ปรึกษาแนะนำเกี่ยวกับท่อไอเสีย ผลิตและติดตั้งท่อไอเสีย
+                  โดยเฉพาะท่อคู่ VIP พร้อมเดินไลน์ท่อใหม่ตามต้องการ ตรงรุ่น
+                  แรงไม่ตรง
                 </p>
                 <button type="" className="btn-banner">
                   อ่านเพิ่มเติม
@@ -38,10 +39,12 @@ const BannerIndex = () => {
           <div className="banner-index ">
             <div className="row ">
               <div className="col-md-4 banner-text">
-                <h1>CM MUFFER</h1>
+                <h1>DUAL EXHAUST</h1>
                 <p>
-                  Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s, when an unknown printer took
+                  CM MUFFLER เชี่ยวชาญด้านการปรับแต่ง
+                  สูตรท่อไอเสียระบบท่อคู่ให้สามารถใช้งานได้จริง
+                  เพิ่มอัตราการเร่งอย่างเห็นได้ชัด
+                  แรงดันอากาศภายในไม่มีตรงด้วยสูตรจากทางร้าน
                 </p>
                 <button type="" className="btn-banner">
                   อ่านเพิ่มเติม

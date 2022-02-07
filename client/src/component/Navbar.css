@@ -24,29 +24,32 @@ ul {
   margin-bottom: 0;
   padding-left: 0;
 }
-.menu-navbar ul li {
-  display: inline-block;
-  position: relative;
-  font-size: 18px;
-  margin: 0 20px;
-  line-height: 80px;
-  padding: 0 20px;
-}
-.menu-navbar ul ul {
-  position: absolute;
-  right: -60px;
-  display: none;
-}
-.menu-navbar ul ul li {
-  width: 150px;
-  padding: 0 10px;
-  background-color: rgb(242, 242, 242);
-  border-bottom: 1px solid #ff313d;
-}
-.menu-navbar ul li:hover > ul {
-  display: block;
-}
 
+/*------ Dropdown -------*/
+.menu-navbar li {
+  display: inline-block;
+  line-height: 80px;
+  font-size: 14px;
+  width: 100px;
+}
+.menu-navbar ul li {
+  text-align: center;
+}
+.menu-navbar li ul {
+  display: none;
+  position: absolute;
+  width: inherit;
+  background-color: rgb(242, 242, 242);
+}
+.menu-navbar li ul li {
+  display: block;
+  line-height: 50px;
+}
+.menu-navbar li:hover ul {
+  display: block;
+  z-index: 99;
+}
+/*------ Dropdown -------*/
 .icon-respon {
   display: none;
 }

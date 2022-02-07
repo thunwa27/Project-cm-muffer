@@ -58,8 +58,9 @@
   }
   .footer-menu ul {
     display: flex;
+    text-align: center;
   }
   .footer-menu ul li {
-    padding: 0 10px;
+    width: 100px;
   }
 }

@@ -12,25 +12,7 @@ import { Pagination } from "swiper";
 
 const ContentSwiper = () => {
   const [indexShow, setIndexShow] = useState();
-
-  const Data = [
-    {
-      img_url: require("../img/product/products_1.png"),
-      price: 3000,
-    },
-    {
-      img_url: require("../img/product/products_2.png"),
-      price: 5000,
-    },
-    {
-      img_url: require("../img/product/products_3.png"),
-      price: 8000,
-    },
-    {
-      img_url: require("../img/product/products_4.png"),
-      price: 3500,
-    },
-  ];
+  const maxLength = 55;
 
   const ShowBuyEL = (index) => {
     console.log(index);
@@ -70,8 +52,8 @@ const ContentSwiper = () => {
       <div className="content-sec-1">
         <h3>ร้านเชียงใหม่ ท่อพัก</h3>
         <p>
-          Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s, when an unknown printer took a
+          สูตรการดัดแปลงท่อไอเสียมากมายเพื่อเพิ่มขุมกำลังรถให้แรงขึ้นกว่า
+          สามารถเลือกได้ตามความต้องการ
         </p>
       </div>
       <div className="content-sec-2">
@@ -150,7 +132,10 @@ const ContentSwiper = () => {
 
                   <div className="swiper-detail">
                     <p>{data.products_name}</p>
-                    <p>Lorem Ipsum has been the industry's standard</p>
+                    <p>{`${data.products_detail.substring(
+                      0,
+                      maxLength
+                    )}...`}</p>
                     <p>ราคา {data.products_price} บาท</p>
                   </div>
                 </div>
