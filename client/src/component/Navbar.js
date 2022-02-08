@@ -10,17 +10,6 @@ const Navbar = () => {
     setDropResponsive(!dropResponsive);
   };
 
-  //----- Function Scroll Navbar ----- //
-  const [offset, setOffset] = useState(0);
-  const onScroll = () => setOffset(window.pageYOffset);
-  console.log(offset);
-  useEffect(() => {
-    // clean up code
-    window.removeEventListener("scroll", onScroll);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
     <div className="container-fluid navberMain">
       <div className="container">
@@ -34,7 +23,7 @@ const Navbar = () => {
                 <Link to="/">หน้าแรก</Link>
               </li>
               <li>
-                <Link to="/">สินค้า</Link>
+                <Link to="/ShowProduct">สินค้า</Link>
                 <ul>
                   <li>
                     <Link to="/">ท่อสแตนเลส</Link>
@@ -48,7 +37,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li>
-                <Link to="/">เกี่ยวกับเรา</Link>
+                <Link href="/">เกี่ยวกับเรา</Link>
               </li>
               <li>
                 <Link to="/">ติดต่อ</Link>
