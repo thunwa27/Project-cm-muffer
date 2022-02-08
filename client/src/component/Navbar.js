@@ -66,7 +66,7 @@ const Navbar = () => {
               <Link to="/">หน้าแรก</Link>
             </li>
             <li>
-              <Link to="/">สินค้า</Link>
+              <Link to="/ShowProduct">สินค้า</Link>
               <ul>
                 <li>
                   <Link to="/">ท่อสแตนเลส</Link>
