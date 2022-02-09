@@ -1,8 +1,11 @@
-import React, { useRef, useState } from "react";
+import { useState, useEffect } from "react";
 
 import { IoSearchSharp } from "react-icons/io5";
 import product_1 from "../../img/product/products_1.png";
 import "./ShowProducts.css";
+import Container from "react-bootstrap/Container";
+import Carousel from "react-bootstrap/Carousel";
+import axios from "axios";
 
 const dataPromotion = [
   {
@@ -19,37 +22,27 @@ const dataPromotion = [
   },
 ];
 
-console.log(dataPromotion);
-
 const ShowProduct = () => {
   return (
     <div className="page__products">
-      <div className="container-fluid page__products_promotion">
+      <Container fluid className=" page__products_promotion">
         <h5>โปรโมชั่น</h5>
-        <div className="container">
-          <div
-            id="carouselExampleSlidesOnly"
-            className="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div className="carousel-inner">
-              <div className="carousel-item active" data-bs-interval="2000">
-                <span>150651651-1</span>
-              </div>
-              <div className="carousel-item" data-bs-interval="2000">
-                <span>150651651-2</span>
-              </div>
-              <div className="carousel-item" data-bs-interval="2000">
-                <span>150651651-3</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <Container>
+          <Carousel className="products_promotion">
+            {dataPromotion.map((data, index) => {
+              return (
+                <Carousel.Item interval={1000} key={index}>
+                  <span>{data.Title}</span>
+                </Carousel.Item>
+              );
+            })}
+          </Carousel>
+        </Container>
+      </Container>
       <div className="container main__search">
         <div className="row">
-          <div className="col-md-2"></div>
-          <div className="col-md-10">
+          <div className="col-md-4"></div>
+          <div className="col-md-8">
             <div className="products__search">
               <input type="text" placeholder="ค้นหาสินค้า . . . " />
               <button>

@@ -23,7 +23,7 @@ const ContentAccordion = () => {
           </div>
         </Col>
         <Col md>
-          <Accordion defaultActiveKey="0">
+          <Accordion>
             <Accordion.Item eventKey="0">
               <Accordion.Header>
                 ก่อนทำท่อไอเสียต้องเตรียมอะไรบ้าง
