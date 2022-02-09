@@ -1,14 +1,5 @@
 import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-
-// import required modules
-// import required modules
-import { Autoplay } from "swiper";
 import { IoSearchSharp } from "react-icons/io5";
 import product_1 from "../../img/product/products_1.png";
 import "./ShowProducts.css";
@@ -28,31 +19,31 @@ const dataPromotion = [
   },
 ];
 
+console.log(dataPromotion);
+
 const ShowProduct = () => {
   return (
     <div className="page__products">
       <div className="container-fluid page__products_promotion">
         <h5>โปรโมชั่น</h5>
         <div className="container">
-          <Swiper
-            spaceBetween={30}
-            centeredSlides={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            navigation={true}
-            modules={[Autoplay]}
-            className="mySwiper"
+          <div
+            id="carouselExampleSlidesOnly"
+            className="carousel slide"
+            data-bs-ride="carousel"
           >
-            {dataPromotion.map((data) => {
-              return (
-                <SwiperSlide className="products_promotion ">
-                  <span>{data.Title}</span>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
+            <div className="carousel-inner">
+              <div className="carousel-item active" data-bs-interval="2000">
+                <span>150651651-1</span>
+              </div>
+              <div className="carousel-item" data-bs-interval="2000">
+                <span>150651651-2</span>
+              </div>
+              <div className="carousel-item" data-bs-interval="2000">
+                <span>150651651-3</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="container main__search">

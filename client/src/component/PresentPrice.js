@@ -7,12 +7,15 @@ import present_price_bg1 from "../img/PresentPrice/present_price_bg1.jpg";
 import present_price_bg2 from "../img/PresentPrice/present_price_bg2.jpg";
 import present_price_bg3 from "../img/PresentPrice/present_price_bg3.jpg";
 import present_price_bg4 from "../img/PresentPrice/present_price_bg4.jpg";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const PresentPrice = () => {
   return (
-    <div className="container present_price ">
-      <div className="row gx-0 ">
-        <div className="col-xl-3 col-md-3">
+    <Container className="present_price">
+      <Row>
+        <Col lg={3} md={3}>
           <div className="present-bg">
             <img src={present_price_bg1} alt="" />
           </div>
@@ -21,8 +24,9 @@ const PresentPrice = () => {
             <p>ราคาเริ่มที่ 3,000 บาท</p>
             <img src={products_home_2} alt="" />
           </div>
-        </div>
-        <div className="col-xl-3 col-md-3">
+        </Col>
+
+        <Col lg={3} md={3}>
           <div className="present-bg">
             <img src={present_price_bg2} alt="" />
           </div>
@@ -31,8 +35,9 @@ const PresentPrice = () => {
             <p>ราคาเริ่มที่ 5,000 บาท</p>
             <img src={products_home_1} alt="" />
           </div>
-        </div>
-        <div className="col-xl-3 col-md-3">
+        </Col>
+
+        <Col lg={3} md={3}>
           <div className="present-bg">
             <img src={present_price_bg3} alt="" />
           </div>
@@ -41,8 +46,9 @@ const PresentPrice = () => {
             <p>ราคาเริ่มที่ 4,500 บาท</p>
             <img src={products_home_3} alt="" />
           </div>
-        </div>
-        <div className="col-xl-3 col-md-3">
+        </Col>
+
+        <Col lg={3} md={3}>
           <div className="present-bg">
             <img src={present_price_bg4} alt="" />
           </div>
@@ -51,9 +57,9 @@ const PresentPrice = () => {
             <p>ราคาเริ่มที่ 4,000 บาท</p>
             <img src={products_home_4} alt="" />
           </div>
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

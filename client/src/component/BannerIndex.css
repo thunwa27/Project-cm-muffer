@@ -7,7 +7,7 @@
 .bg-banner {
   position: relative;
   overflow: hidden;
-  height: 600px;
+  height: 680px;
   /*background-color: #e5e5e5;*/
   padding-top: 3rem;
 }
@@ -56,7 +56,7 @@
 
 @media screen and (min-width: 820px) {
   .bg-banner {
-    height: 500px;
+    height: 600px;
   }
   .banner-text {
     text-align: left;
@@ -64,7 +64,7 @@
 }
 @media screen and (min-width: 1280px) {
   .bg-banner {
-    height: 660px;
+    height: 700px;
   }
 }
 @media screen and (min-width: 1600px) {

@@ -51,6 +51,9 @@ ul {
   display: block;
   z-index: 99;
 }
+.menu-navbar ul li a:hover {
+  color: #000;
+}
 /*------ Dropdown -------*/
 .icon-respon {
   display: none;

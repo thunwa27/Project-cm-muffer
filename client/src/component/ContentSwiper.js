@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./ContentSwiper.css";
+import Container from "react-bootstrap/Container";
 
 import { Pagination } from "swiper";
 
@@ -46,7 +47,7 @@ const ContentSwiper = () => {
   }, []);
 
   return (
-    <div className="container content-main">
+    <Container className="content-main">
       <div className="content-sec-1">
         <h3>ร้านเชียงใหม่ ท่อพัก</h3>
         <p>
@@ -145,7 +146,7 @@ const ContentSwiper = () => {
       <div className="content-sec-4">
         <Link to="/">ดูสินค้าทั้งหมด</Link>
       </div>
-    </div>
+    </Container>
   );
 };
 

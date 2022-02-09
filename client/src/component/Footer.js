@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { BsFacebook } from "react-icons/bs";
 import { BsLine } from "react-icons/bs";
 import logo_cmmuffler from "../img/svg/logo_cmmuffler.svg";
-
+import Container from "react-bootstrap/Container";
 const Footer = () => {
   return (
-    <div className="container-fluid footer">
-      <div className="container">
+    <Container fluid className="footer">
+      <Container>
         <div className="footer-logo-company">
           <img src={logo_cmmuffler} alt="" />
           <p>Lorem Ipsum has been the industry's</p>
@@ -32,11 +32,11 @@ const Footer = () => {
           <BsFacebook />
           <BsLine />
         </div>
-      </div>
+      </Container>
       <div className="footer-c">
         <span>© Chiang Mai Muffer</span>
       </div>
-    </div>
+    </Container>
   );
 };
 

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import logo_cmmuffler from "../img/svg/logo_cmmuffler.svg";
 import "./Navbar.css";
-
+import Container from "react-bootstrap/Container";
 const Navbar = () => {
   const [dropResponsive, setDropResponsive] = useState(false);
 
@@ -11,8 +11,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="container-fluid navberMain">
-      <div className="container">
+    <Container fluid className="navberMain">
+      <Container>
         <div className="top-navbar">
           <div className="logo-navbar">
             <img src={logo_cmmuffler} alt="" />
@@ -90,8 +90,8 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </div>
-    </div>
+      </Container>
+    </Container>
   );
 };
 

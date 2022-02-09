@@ -6,7 +6,10 @@
   font-family: "Prompt", sans-serif;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+}
+ul {
+  padding-left: 0 !important;
 }
 .App {
   background-color: #e5e5e5;

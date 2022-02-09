@@ -5,7 +5,7 @@
 .present_price .row {
   justify-content: center;
 }
-.present_price .row .col-xl-3 {
+.present_price .row .col-lg-3 {
   width: 300px;
   height: 400px;
   background: #ff333e;
@@ -39,9 +39,15 @@
 .present-text {
   position: relative;
 }
+@media screen and (min-width: 1024px) {
+  .present_price .row .col-lg-3 {
+    width: 220px;
+    height: 320px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
-  .present_price .row .col-xl-3 {
+  .present_price .row .col-lg-3 {
     width: 255px;
     height: 350px;
   }

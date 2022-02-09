@@ -1,18 +1,20 @@
 import img_car_1 from "../img/bannerHero/img_car_1.png";
 import "./ContentDetail.css";
-
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 const ContentDetail = () => {
   return (
-    <div className="detail-main container-fluid">
+    <Container fluid className="detail-main">
       <div className="line-detail-main">
         <div className="line-detail"></div>
       </div>
-      <div className="detail-content container">
-        <div className="row gx-0 ">
-          <div className="col-md-7">
+      <Container className="detail-content">
+        <Row>
+          <Col md={7}>
             <img src={img_car_1} alt="" />
-          </div>
-          <div className="col-md-5">
+          </Col>
+          <Col md={5}>
             <section className="detail-text">
               <h1>ท่อคู่ออกจริง แรงจริง</h1>
               <p>
@@ -22,10 +24,10 @@ const ContentDetail = () => {
                 เลือกชนิดวัตถุได้ทั้ง เหล็ก สแตนเลส หรือไทเทเนียม
               </p>
             </section>
-          </div>
-        </div>
-      </div>
-    </div>
+          </Col>
+        </Row>
+      </Container>
+    </Container>
   );
 };
 
